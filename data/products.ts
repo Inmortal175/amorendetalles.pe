@@ -91,7 +91,7 @@ export const products: Product[] = [
   {
     id: '4',
     name: 'Caja Secreta del Corazón',
-    price: 75,
+    price: 65,
     description: 'Caja sorpresa tipo explosiva con mensajes, fotos y detalles personalizados para sorprender con amor.',
     requiresImage: true,
     image: '/images/caja-secreta-del-corazon.webp',
@@ -139,7 +139,7 @@ export const products: Product[] = [
   {
     id: '6',
     name: 'Detalle con Cariño',
-    price: 75,
+    price: 59.90,
     description: 'Una caja explosiva personalizable que se abre revelando fotos, mensajes y detalles cuidadosamente pensados para expresar amor de una forma única.',
     requiresImage: true,
     image: '/images/detalle-con-carino.webp',
@@ -160,7 +160,7 @@ export const products: Product[] = [
   {
     id: '7',
     name: 'Tarjeta de Amor',
-    price: 30,
+    price: 19.90,
     description: 'Una tarjeta desplegable artesanal que guarda mensajes románticos y detalles hechos con cariño para sorprender a alguien especial.',
     requiresImage: false,
     image: '/images/tarjeta-de-amor.webp',
@@ -223,7 +223,7 @@ export const products: Product[] = [
   {
     id: '10',
     name: 'Tarjeta de Amor Grande',
-    price: 35,
+    price: 24.90,
     description: 'Una tarjeta artesanal de gran formato que despliega mensajes y escenas de amor en relieve para sorprender y emocionar.',
     requiresImage: false,
     image: '/images/tarjeta-de-amor-grande.webp',
