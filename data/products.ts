@@ -139,7 +139,7 @@ export const products: Product[] = [
   {
     id: '6',
     name: 'Detalle con Cariño',
-    price: 59.90,
+    price: 65,
     description: 'Una caja explosiva personalizable que se abre revelando fotos, mensajes y detalles cuidadosamente pensados para expresar amor de una forma única.',
     requiresImage: true,
     image: '/images/detalle-con-carino.webp',
