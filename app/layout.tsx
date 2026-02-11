@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Detalles Artesanales San Valentín 2025 | Regalos Personalizados',
+  title: 'Detalles Artesanales San Valentín 2026 | Regalos Personalizados',
   description: 'Detalles artesanales únicos hechos a mano para el Día del Amor y la Amistad. Personaliza tu regalo perfecto este 14 de febrero.',
   keywords: 'san valentin, regalos personalizados, detalles artesanales, 14 de febrero, regalos hechos a mano',
   icons: {
