@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     apple: { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
   },
   openGraph: {
-    title: 'Detalles Artesanales San Valentín 2025',
+    title: 'Detalles Artesanales San Valentín 2026',
     description: 'Regala algo único este 14 de febrero. Detalles hechos a mano y personalizados.',
     type: 'website',
   },
