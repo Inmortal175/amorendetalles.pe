@@ -22,9 +22,9 @@ export const products: Product[] = [
     name: 'Para mamá con Amor',
     price: 65,
     description: 'Set de lonche completo: taza decorada, canasta y monedero artesanal — un regalo práctico y hermoso que mamá usará todos los días.',
-    image: '/images/para mamá con amor.webp',
+    image: '/images/para-mama-con-amor.webp',
     images: [
-      '/images/para mamá con amor.webp',
+      '/images/para-mama-con-amor.webp',
     ],
     features: [
       'Taza de cerámica decorada a mano',
@@ -41,10 +41,10 @@ export const products: Product[] = [
     name: 'Bolso de Temporada + Joyero',
     price: 80,
     description: 'Combo premium: bolso de temporada elegante más joyero artesanal hecho a mano — el regalo más completo y sofisticado para mamá.',
-    image: '/images/carter + joyero para mamá.webp',
+    image: '/images/carter-joyero-para-mama.webp',
     images: [
-      '/images/carter + joyero para mamá.webp',
-      '/images/carter + joyero para mamá2.webp',
+      '/images/carter-joyero-para-mama.webp',
+      '/images/carter-joyero-para-mama-2.webp',
     ],
     features: [
       'Bolso de temporada de calidad',
@@ -61,10 +61,10 @@ export const products: Product[] = [
     name: 'Caja Corazón "Te Amo Mamá"',
     price: 60,
     description: 'Caja con forma de corazón llena de dulces y chocolates — el regalo perfecto para el hijo estudiante o el compañero de oficina que quiere sorprender a mamá.',
-    image: '/images/corazon de mamá.webp',
+    image: '/images/corazon-de-mama.webp',
     images: [
-      '/images/corazon de mamá.webp',
-      '/images/corazon de mamá 2.webp',
+      '/images/corazon-de-mama.webp',
+      '/images/corazon-de-mama-2.webp',
     ],
     features: [
       'Caja decorativa en forma de corazón',
@@ -82,9 +82,9 @@ export const products: Product[] = [
     name: 'Caja Secreta del Corazón',
     price: 55,
     description: 'Caja corazón rosada que guarda una sorpresa irresistible: reloj elegante y dulces seleccionados — un combo de alto impacto visual a un precio muy atractivo.',
-    image: '/images/detalle de amor para mamá.webp',
+    image: '/images/detalle-de-amor-para-mama.webp',
     images: [
-      '/images/detalle de amor para mamá.webp',
+      '/images/detalle-de-amor-para-mama.webp',
     ],
     features: [
       'Caja corazón en tonos rosados o dorados',
