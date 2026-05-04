@@ -2,16 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { HeartIcon, ShoppingBagIcon } from '@heroicons/react/24/outline';
+import { ShoppingBagIcon } from '@heroicons/react/24/outline';
 import { BUSINESS_NAME, WHATSAPP_NUMBER } from '@/data/products';
 
-/**
- * StickyHeader - Header profesional con scroll behavior
- * - Transparente al inicio
- * - Backdrop blur al hacer scroll
- * - Responsive y mobile-friendly
- * - Escalable para futuras secciones
- */
 export default function StickyHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -38,28 +31,33 @@ export default function StickyHeader() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo / Brand */}
-          <Link 
+          <Link
             href="/"
             className="flex items-center gap-2 group"
           >
-            <div className={`p-2 rounded-full transition-all duration-300 ${
-              isScrolled 
-                ? 'bg-rose-100' 
-                : 'bg-white/90 backdrop-blur-sm'
+            <div className={`rounded-full overflow-hidden transition-all duration-300 flex-shrink-0 ${
+              isScrolled
+                ? 'bg-white p-1 shadow-md'
+                : 'bg-white/90 backdrop-blur-sm p-1'
             }`}>
-              <HeartIcon className="w-5 h-5 md:w-6 md:h-6 text-rose-600 group-hover:scale-110 transition-transform" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/favicon.svg"
+                alt={BUSINESS_NAME}
+                className="w-8 h-8 md:w-9 md:h-9 group-hover:scale-110 transition-transform"
+              />
             </div>
             <div>
               <h1 className={`font-display font-bold text-lg md:text-xl transition-colors ${
-                isScrolled 
-                  ? 'text-gray-900' 
+                isScrolled
+                  ? 'text-gray-900'
                   : 'text-white drop-shadow-lg'
               }`}>
                 {BUSINESS_NAME}
               </h1>
               <p className={`text-xs hidden md:block transition-colors ${
-                isScrolled 
-                  ? 'text-gray-600' 
+                isScrolled
+                  ? 'text-gray-600'
                   : 'text-white/90 drop-shadow'
               }`}>
                 Detalles artesanales

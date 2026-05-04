@@ -6,9 +6,8 @@ import ImageGallery from '@/components/ImageGallery';
 import ProductDetailClient from '@/components/ProductDetailClient';
 import StickyHeader from '@/components/StickyHeader';
 import { 
-  ArrowLeftIcon, 
-  CheckCircleIcon, 
-  CameraIcon,
+  ArrowLeftIcon,
+  CheckCircleIcon,
   SparklesIcon,
   GiftIcon,
   HeartIcon,
@@ -84,16 +83,10 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               <div className="space-y-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
                 {/* Title and price */}
                 <div>
-                  <div className="flex items-start justify-between gap-4 mb-3">
+                  <div className="mb-3">
                     <h1 className="text-3xl md:text-4xl font-display font-bold text-rose-900">
                       {product.name}
                     </h1>
-                    {product.requiresImage && (
-                      <div className="flex items-center gap-1 bg-rose-500 text-white px-3 py-1.5 rounded-full text-sm font-semibold whitespace-nowrap">
-                        <CameraIcon className="w-4 h-4" />
-                        <span>Foto requerida</span>
-                      </div>
-                    )}
                   </div>
                   <p className="text-gray-600 text-lg">{product.description}</p>
                 </div>
@@ -149,24 +142,6 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     ))}
                   </ul>
                 </div>
-
-                {/* Image requirement notice */}
-                {product.requiresImage && (
-                  <div className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-6">
-                    <div className="flex items-start gap-3">
-                      <CameraIcon className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                      <div>
-                        <h3 className="font-bold text-blue-900 mb-2">
-                          Este producto requiere tu foto
-                        </h3>
-                        <p className="text-blue-800 text-sm">
-                          Necesitamos que nos envíes la imagen de los enamorados por WhatsApp. 
-                          Te guiaremos en cómo hacerlo después de hacer tu pedido.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
 
                 {/* Reservation and Payment Info */}
                 <div className="bg-purple-50 border-2 border-purple-200 rounded-2xl p-6 md:p-8">
@@ -283,7 +258,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     Fecha límite
                   </h3>
                   <p className="text-gray-700">
-                    Último día para pedidos: <strong>12 de febrero</strong>
+                    Último día para pedidos: <strong>8 de mayo</strong>
                   </p>
                 </div>
                 <div className="text-center p-4">
@@ -301,7 +276,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                     Entrega garantizada
                   </h3>
                   <p className="text-gray-700">
-                    A tiempo para el 14 de febrero
+                    A tiempo para el Día de las Madres (10 de mayo)
                   </p>
                 </div>
               </div>

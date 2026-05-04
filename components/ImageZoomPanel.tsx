@@ -87,7 +87,7 @@ export default function ImageZoomPanel({
             <div
               className="w-full h-full"
               style={{
-                backgroundImage: `url(${src})`,
+                backgroundImage: `url('${src}')`,
                 backgroundSize: `${zoomLevel * 100}%`,
                 backgroundPosition: `${mousePosition.x}% ${mousePosition.y}%`,
                 backgroundRepeat: 'no-repeat',

@@ -8,8 +8,32 @@ export default function InfoSection() {
           {/* Important dates */}
           <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-12 border-2 border-rose-200 animate-slide-up">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-rose-900 mb-3">
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-rose-900 mb-3 flex items-center justify-center gap-3">
+                <svg width="26" height="34" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 80 L30 52" stroke="#86efac" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M30 65 Q20 58 17 48 Q27 56 30 52" fill="#4ade80"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#ddd6fe"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#c4b5fd" transform="rotate(60 30 36)"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#ddd6fe" transform="rotate(120 30 36)"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#c4b5fd" transform="rotate(180 30 36)"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#ddd6fe" transform="rotate(240 30 36)"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#c4b5fd" transform="rotate(300 30 36)"/>
+                  <circle cx="30" cy="36" r="9" fill="#fbbf24"/>
+                  <circle cx="30" cy="36" r="5" fill="#f59e0b"/>
+                </svg>
                 Información Importante
+                <svg width="26" height="34" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 80 L30 52" stroke="#86efac" strokeWidth="3" strokeLinecap="round"/>
+                  <path d="M30 65 Q40 58 43 48 Q33 56 30 52" fill="#4ade80"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#ddd6fe"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#c4b5fd" transform="rotate(60 30 36)"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#ddd6fe" transform="rotate(120 30 36)"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#c4b5fd" transform="rotate(180 30 36)"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#ddd6fe" transform="rotate(240 30 36)"/>
+                  <ellipse cx="30" cy="36" rx="10" ry="18" fill="#c4b5fd" transform="rotate(300 30 36)"/>
+                  <circle cx="30" cy="36" r="9" fill="#fbbf24"/>
+                  <circle cx="30" cy="36" r="5" fill="#f59e0b"/>
+                </svg>
               </h2>
               <div className="h-1 w-24 bg-rose-400 mx-auto rounded-full"></div>
             </div>
@@ -22,7 +46,7 @@ export default function InfoSection() {
                   Fecha límite
                 </h3>
                 <p className="text-3xl font-display font-bold text-rose-600 mb-2">
-                  12 de febrero
+                  8 de mayo
                 </p>
                 <p className="text-sm text-gray-700">
                   Último día para hacer tu pedido y garantizar la entrega
@@ -120,7 +144,7 @@ export default function InfoSection() {
                 </div>
                 <h3 className="font-bold text-lg text-rose-900 mb-2">Recibe tu regalo</h3>
                 <p className="text-sm text-gray-600">
-                  Lo elaboramos con amor y lo entregas a tiempo para el 14
+                  Lo elaboramos con amor y lo entregas a tiempo para el Día de las Madres
                 </p>
               </div>
             </div>

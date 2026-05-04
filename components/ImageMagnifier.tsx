@@ -86,7 +86,7 @@ export default function ImageMagnifier({
             top: `${cursorPosition.y - magnifierSize / 2}px`,
             borderRadius: '50%',
             border: '3px solid rgba(255, 255, 255, 0.9)',
-            backgroundImage: `url(${src})`,
+            backgroundImage: `url('${src}')`,
             backgroundSize: `${zoomLevel * 100}% ${zoomLevel * 100}%`,
             backgroundPosition: `${magnifierPosition.x}% ${magnifierPosition.y}%`,
             backgroundRepeat: 'no-repeat',

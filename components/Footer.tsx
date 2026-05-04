@@ -10,8 +10,18 @@ export default function Footer() {
         <div className="max-w-5xl mx-auto">
           {/* Brand */}
           <div className="text-center mb-6 md:mb-8">
-            <h3 className="text-2xl md:text-3xl font-display font-bold mb-3 flex items-center justify-center gap-2">
-              <HeartIcon className="w-6 h-6 md:w-8 md:h-8 text-rose-400" />
+            {/* Logo de la marca */}
+            <div className="flex justify-center mb-4">
+              <div className="bg-white rounded-2xl p-3 shadow-lg inline-block">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/favicon.svg"
+                  alt={BUSINESS_NAME}
+                  className="w-24 h-24 md:w-28 md:h-28"
+                />
+              </div>
+            </div>
+            <h3 className="text-2xl md:text-3xl font-display font-bold mb-3">
               {BUSINESS_NAME}
             </h3>
             <p className="text-gray-400 text-base md:text-lg mb-4">
@@ -53,7 +63,7 @@ export default function Footer() {
             <div className="flex flex-col items-center gap-2">
               <CalendarDaysIcon className="w-7 h-7 md:w-8 md:h-8 text-rose-400" />
               <p className="text-gray-400 text-sm">Fecha límite de pedidos</p>
-              <p className="font-semibold text-base md:text-lg">12 de febrero {currentYear}</p>
+              <p className="font-semibold text-base md:text-lg">8 de mayo {currentYear}</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <GiftIcon className="w-7 h-7 md:w-8 md:h-8 text-rose-400" />
@@ -63,7 +73,7 @@ export default function Footer() {
             <div className="flex flex-col items-center gap-2">
               <HeartIcon className="w-7 h-7 md:w-8 md:h-8 text-rose-400" />
               <p className="text-gray-400 text-sm">Campaña</p>
-              <p className="font-semibold text-base md:text-lg">San Valentín {currentYear}</p>
+              <p className="font-semibold text-base md:text-lg">Día de las Madres {currentYear}</p>
             </div>
           </div>
 
@@ -74,7 +84,7 @@ export default function Footer() {
               Contáctanos por WhatsApp
             </p>
             <p className="text-rose-400 font-semibold text-lg mb-4">
-              +51 973 175 966
+              +{WHATSAPP_NUMBER.slice(0,2)} {WHATSAPP_NUMBER.slice(2,5)} {WHATSAPP_NUMBER.slice(5,8)} {WHATSAPP_NUMBER.slice(8)}
             </p>
             <div className="flex items-center justify-center gap-2 text-sm text-gray-400">
               <span>Síguenos:</span>
@@ -94,12 +104,12 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-center">
-            <p className="text-gray-500 text-xs md:text-sm flex items-center justify-center gap-2 flex-wrap">
-              © {currentYear} {BUSINESS_NAME}. Todos los derechos reservados. 
+            <div className="text-gray-500 text-xs md:text-sm flex items-center justify-center gap-2 flex-wrap">
+              <span>© {currentYear} {BUSINESS_NAME}. Todos los derechos reservados.</span>
               <span className="flex items-center gap-1">
-                Hecho con <HeartIcon className="w-4 h-4 text-rose-400 inline" /> para celebrar el amor.
+                Hecho con <HeartIcon className="w-4 h-4 text-rose-400 mx-0.5" /> para celebrar a las mamás.
               </span>
-            </p>
+            </div>
           </div>
         </div>
       </div>

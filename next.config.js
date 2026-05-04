@@ -19,8 +19,10 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
-  // Headers para caching agresivo
+  // Headers para caching agresivo (solo en producción — en dev causa que el browser
+  // sirva chunks JS viejos porque webpack reutiliza las mismas URLs sin content-hash)
   async headers() {
+    if (process.env.NODE_ENV !== 'production') return [];
     return [
       {
         source: '/:all*(svg|jpg|jpeg|png|webp|avif|gif)',

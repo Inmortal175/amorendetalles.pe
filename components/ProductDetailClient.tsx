@@ -16,7 +16,6 @@ interface Product {
   name: string;
   price: number;
   description: string;
-  requiresImage: boolean;
 }
 
 interface ProductDetailClientProps {
@@ -38,13 +37,6 @@ export default function ProductDetailClient({ product, whatsappLink }: ProductDe
     let message = `${greeting},%0AQuiero hacer un pedido en _*${encodeURIComponent(BUSINESS_NAME)}*_%0A%0A`;
     message += `*Producto:* ${encodeURIComponent(product.name)}%0A`;
     message += `*Precio base:* S/${product.price}%0A`;
-    message += `*Personalizable:* Si%0A`;
-
-    // Agrega detalles faltantes del producto
-    if (product.requiresImage) {
-      message += `*Requiere imagen de los enamorados:* Si%0A`;
-    }
-
     message += `%0A> Entiendo que la reserva es del 50%25 mínimo y se realiza por Yape.%0A`;
     
     if (selectedLocation) {

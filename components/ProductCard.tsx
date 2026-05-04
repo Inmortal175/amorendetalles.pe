@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Product, getWhatsAppLink } from '@/data/products';
-import { CameraIcon, SparklesIcon, ArrowRightIcon, GiftIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 interface ProductCardProps {
   product: Product;
@@ -23,20 +23,6 @@ export default function ProductCard({ product }: ProductCardProps) {
             className="object-cover group-hover:scale-110 transition-transform duration-500"
             unoptimized
           />
-
-          {/* Badge for image requirement */}
-          {product.requiresImage && (
-            <div className="absolute top-3 right-3 bg-rose-500 text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-md flex items-center gap-1 z-10">
-              <CameraIcon className="w-4 h-4" />
-              <span>Foto requerida</span>
-            </div>
-          )}
-
-          {/* Personalizable badge */}
-          <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-rose-700 px-3 py-1.5 rounded-full text-xs font-semibold shadow-md flex items-center gap-1 z-10">
-            <SparklesIcon className="w-4 h-4" />
-            <span>Personalizable</span>
-          </div>
 
           {/* Hover overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-rose-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6 z-10">
@@ -91,13 +77,6 @@ export default function ProductCard({ product }: ProductCardProps) {
           </a>
         </div>
 
-        {/* Extra info */}
-        {product.requiresImage && (
-          <p className="text-xs text-gray-500 mt-3 text-center flex items-center justify-center gap-1">
-            <CameraIcon className="w-4 h-4" />
-            Te ayudaremos a enviar tu imagen por WhatsApp
-          </p>
-        )}
       </div>
     </div>
   );
